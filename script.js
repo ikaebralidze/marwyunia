@@ -16,14 +16,6 @@ const jump = function() {
     }
 
     kaktus.classList.add("block");
-    if (givi === 0) {
-        score = setInterval(function() {
-            scores++;
-            console.log(scores);
-        }, 100);
-    } else {
-        clearInterval(score);
-    }
 };
 
 let isAlive = setInterval(function() {
