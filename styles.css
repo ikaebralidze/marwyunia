@@ -1,0 +1,73 @@
+.gameback {
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#marwyvi {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    top: 150px;
+    background-image: url(mawyvi.jpg);
+    background-size: 50px 50px;
+}
+
+.kaktus {
+    width: 20px;
+    height: 30px;
+    background-color: black;
+    position: relative;
+    left: 370px;
+    top: 120px;
+    background-image: url(cactus.png);
+    background-size: 20px 30px;
+}
+
+.block {
+    animation: block 1.7s infinite linear;
+}
+
+.jump {
+    animation: jump 0.7s linear;
+}
+
+.failed {
+    text-align: center;
+    position: relative;
+    top: 0px;
+    font-size: 3rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes block {
+    0% {
+        left: 370px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 130px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top: 130px;
+    }
+    100% {
+        top: 150px;
+    }
+}
